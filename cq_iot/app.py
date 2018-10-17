@@ -47,8 +47,7 @@ def api_query_task():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, threaded=True)
-
+    app.run(host='0.0.0.0', port=80, threaded=True, debug=True)
     # app.run(host='0.0.0.0', port=443, threaded=True, ssl_context=(
     #     '/etc/letsencrypt/live/cq.jarzebak.eu/cert.pem', '/etc/letsencrypt/live/cq.jarzebak.eu/privkey.pem'))
     log.debug("Started up cq app")

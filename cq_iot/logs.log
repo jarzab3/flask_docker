@@ -1,2 +1,19 @@
 2018-10-16 13:09:54,658 : INFO :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 2018-10-16 13:10:41,804 : INFO :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-16 13:19:08,083 : INFO :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-16 13:20:31,857 : INFO :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-16 13:27:49,091 : INFO :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-16 13:28:09,906 : INFO :  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+2018-10-16 13:28:15,613 : INFO : 88.151.155.60 - - [16/Oct/2018 13:28:15] "GET / HTTP/1.1" 200 -
+2018-10-16 13:43:50,926 : INFO :  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+2018-10-16 13:43:52,830 : INFO : 88.151.155.60 - - [16/Oct/2018 13:43:52] "GET / HTTP/1.1" 200 -
+2018-10-16 13:44:08,208 : INFO : 88.151.155.60 - - [16/Oct/2018 13:44:08] "GET / HTTP/1.1" 200 -
+2018-10-16 13:55:59,434 : INFO :  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+2018-10-16 13:56:09,431 : INFO : 88.151.155.60 - - [16/Oct/2018 13:56:09] "GET / HTTP/1.1" 200 -
+2018-10-16 13:56:11,127 : INFO : 88.151.155.60 - - [16/Oct/2018 13:56:11] "GET / HTTP/1.1" 200 -
+2018-10-16 14:30:00,664 : INFO : 85.204.212.183 - - [16/Oct/2018 14:30:00] "GET / HTTP/1.1" 200 -
+2018-10-16 14:54:29,183 : INFO :  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+2018-10-16 15:32:09,245 : INFO : 101.187.242.16 - - [16/Oct/2018 15:32:09] "GET / HTTP/1.0" 200 -
+2018-10-17 09:22:03,869 : INFO :  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+2018-10-17 09:34:47,269 : INFO :  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+2018-10-17 09:34:59,876 : INFO : 88.151.155.60 - - [17/Oct/2018 09:34:59] "GET / HTTP/1.1" 200 -
