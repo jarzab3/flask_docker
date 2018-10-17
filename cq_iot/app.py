@@ -1,6 +1,6 @@
 from flask import Flask, render_template, Response, jsonify, request
 import settings
-
+from flask import abort
 
 app = Flask(__name__,
             static_url_path='',
@@ -9,41 +9,39 @@ app = Flask(__name__,
 
 log = settings.logging
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
+options = [
+    {
+        'id': 1,
+        'title': u'Add new device',
+        'description': u'More description for add device option',
+        'status': True
+    },
+    {
+        'id': 2,
+        'title': u'View device',
+        'description': u'More description for view device option',
+        'status': False
+    }
+]
 
 
-@app.route('/products')
-def products():
-    return render_template('products.html')
+@app.route('/options/api/v1.0/options', methods=['GET'])
+def get_options():
+    return jsonify({'options': options})
 
 
-@app.route('/store')
-def store():
-    return render_template('store.html')
-
-
-@app.route('/_apiQuery')
-def api_query_task():
-    query = request.args.get('apiQ0', "", type=str).strip()
-    global color
-
-    reply = ""
-
-    if query == "color":
-        color = True
-        reply = "Changed to color"
-    elif query == "gray":
-        color = False
-        reply = "Changed to gray"
-
-    return jsonify(result=reply)
+@app.route('/options/api/v1.0/options/<int:option_id>', methods=['GET'])
+def get_task(option_id):
+    option = [option for option in options if option['id'] == option_id]
+    if len(option) == 0:
+        abort(404)
+    return jsonify({'task': option[0]})
 
 
 if __name__ == '__main__':

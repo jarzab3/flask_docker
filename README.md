@@ -26,16 +26,28 @@ dockerd -D # --debug
 Start flask app docker in detached mode
 `docker run -d -p 80:80 docker-flask`
 
-`docker start <ID>` or `docker-compose up`
+`docker start <ID>` or 
+
+#### Development env, docker-compose allows to reload on source code changes 
 
 - Build docker image:
 
 `docker-compose build`
 
+- Run:
+
+`docker-compose up`
+
 - Remove docker image:
 
 `docker-compose down`
     
+#### Build with docker env
+
+- Build image:
+
+`docker build -t docker-flask .` optionally add: `--no-cache`
+
 - Remove docker containers:
 
 `docker container prune`
@@ -55,3 +67,9 @@ push: `docker push ajarzebak/cqiot_web:flask_init`
 ##### Run bash for docker container:
 
 `docker exec -it <ID> /bin/bash`
+
+```
+docker-compose build
+docker-compose up -d
+docker-compose exec app python manage.py recreate_db
+```
